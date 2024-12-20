@@ -1,0 +1,231 @@
+{
+	"info": {
+		"_postman_id": "1849fa99-e2a2-4b25-9d34-f4aef28ed158",
+		"name": "dweste03",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40431961"
+	},
+	"item": [
+		{
+			"name": "POST USER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Alice Rooper\",\r\n    \"email\": \"alice.Rooper@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/dwes/TE02/api/v3/public/users/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"dwes",
+						"TE02",
+						"api",
+						"v3",
+						"public",
+						"users",
+						"post"
+					]
+				},
+				"description": "Esta solicitud POST nos permite registrar un nuevo usuario y añadirlo a la base de datos."
+			},
+			"response": []
+		},
+		{
+			"name": "GET BYID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/dwes/TE02/api/v3/public/users/get/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"dwes",
+						"TE02",
+						"api",
+						"v3",
+						"public",
+						"users",
+						"get",
+						"1"
+					]
+				},
+				"description": "Esta solicitud GET nos devuelve informacion sobre un usuario especifico, identificado por su id."
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/dwes/TE02/api/v3/public/users/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"dwes",
+						"TE02",
+						"api",
+						"v3",
+						"public",
+						"users",
+						"get"
+					]
+				},
+				"description": "Esta solicitud GET devuelve todos los usuarios de la aplicacion."
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE ALL USERS",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/dwes/TE02/api/v3/public/users/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"dwes",
+						"TE02",
+						"api",
+						"v3",
+						"public",
+						"users",
+						"delete"
+					]
+				},
+				"description": "Esta solicitud DELETE permite a un administrados eliminar todos los usuarios de la aplicacion."
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE BYID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/dwes/TE02/api/v3/public/users/delete/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"dwes",
+						"TE02",
+						"api",
+						"v3",
+						"public",
+						"users",
+						"delete",
+						"2"
+					]
+				},
+				"description": "Esta solicitud DELETE elimina de la base de datos a un usuario, identificado por su id. Lo ideal sería hacer la consulta de actualizar los ids de todos los usuarios una vez eliminado uno."
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE BYID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Peter Peterson\",\r\n    \"email\": \"peter.peterson@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/dwes/TE02/api/v3/public/users/update/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"dwes",
+						"TE02",
+						"api",
+						"v3",
+						"public",
+						"users",
+						"update",
+						"3"
+					]
+				},
+				"description": "Esta solicitud PUT actualiza la informacion de perfil de un usuario."
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE ALL IDS",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/dwes/TE02/api/v3/public/users/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"dwes",
+						"TE02",
+						"api",
+						"v3",
+						"public",
+						"users",
+						"update"
+					]
+				},
+				"description": "Esta solicitud PUT actualiza los ids de todos los usuarios registrados para que no se pierda el orden entre ellos y evitar conflictos futuros."
+			},
+			"response": []
+		},
+		{
+			"name": "BAD REQUEST",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/dwes/TE02/api/v3/public/users/peter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"dwes",
+						"TE02",
+						"api",
+						"v3",
+						"public",
+						"users",
+						"peter"
+					]
+				},
+				"description": "Esta solicitud GET se realiza sobre una url no valida para verificar que se gestionan los errores."
+			},
+			"response": []
+		}
+	]
+}
