@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Peter Petersons",
+        "email": "peter.petersons@example.com"
+    },
+    {
+        "id": 2,
+        "name": "Ander Anderson",
+        "email": "ander.anderson@example.com"
+    },
+    {
+        "id": 3,
+        "name": "Robert Roberson",
+        "email": "robert.roberson@example.com"
+    },
+    {
+        "id": 4,
+        "name": "Santi Santison",
+        "email": "santi.santison@example.com"
+    },
+    {
+        "id": 5,
+        "name": "Unai Unaison",
+        "email": "unai.unaison@example.com"
+    },
+    {
+        "id": 6,
+        "name": "Gorka Gorkason",
+        "email": "gorka.gorkason@example.com"
+    },
+    {
+        "id": 7,
+        "name": "Nora Norason",
+        "email": "nora.norason@example.com"
+    }
+]
